@@ -8,5 +8,8 @@ class Program
 
         Validation validation = new Validation();
         validation.ValidateFirstName();
+
+        Validation validation1 = new Validation();
+        validation1.ValidateLastName();
     }
 }

@@ -4,8 +4,8 @@ namespace UserRegistrationRegex
 {
     public class Validation
     {
-        
-       
+
+
         public void ValidateFirstName()
         {
 
@@ -23,7 +23,23 @@ namespace UserRegistrationRegex
             {
                 Console.WriteLine("Verify First Name Again");
             }
-            
+        }
+        public void ValidateLastName()
+        {
+            Console.WriteLine("Enter Last Name : ");
+            string Name = Console.ReadLine();
+
+            string LastName = "^[A-Z]{1}[a-zA-Z]{2,}$";
+            Regex reg = new Regex(LastName);
+
+            if (reg.IsMatch(Name))
+            {
+                Console.WriteLine("Last Name is valid");
+            }
+            else
+            {
+                Console.WriteLine("Verify Last Name Again");
+            }
         }
     }
 }
