@@ -60,5 +60,23 @@ namespace UserRegistrationRegex
             }
 
         }
+        public void ValidateMobileNumber()
+        {
+            Console.WriteLine("Enter Mobile Number : ");
+            string MobileNo = Console.ReadLine();
+
+            string MOBILENUMBER_REGEX = "^[+]{1}[1-9]{2}[-. ]{1}[1-9]{2}[0-9]{8}$";
+            Regex reg = new Regex(MOBILENUMBER_REGEX);
+
+            if (reg.IsMatch(MobileNo))
+            {
+                Console.WriteLine("Mobile Number is valid");
+            }
+            else
+            {
+                Console.WriteLine("Verify Mobile Number Again");
+            }
+
+        }
     }
 }

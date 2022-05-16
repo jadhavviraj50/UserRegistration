@@ -14,5 +14,8 @@ class Program
 
         Validation validation2 = new Validation();
         validation2.ValidateEmail();
+
+        Validation validation3 = new Validation();
+        validation3.ValidateMobileNumber();
     }
 }
