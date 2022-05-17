@@ -5,7 +5,7 @@ class Program
     {
 
         Console.WriteLine("Welcome to User Registration Problem");
-/*
+
         Validation validation = new Validation();
         validation.ValidateFirstName();
 
@@ -23,9 +23,12 @@ class Program
 
         Validation validation5 = new Validation();
         validation5.ValidatePassword2();
-*/
+
         Validation validation6 = new Validation();
         validation6.ValidatePassword3();
+
+        Validation validation7 = new Validation();
+        validation7.ValidatePassword4();
 
     }
 }
