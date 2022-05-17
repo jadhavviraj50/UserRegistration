@@ -20,8 +20,12 @@ class Program
 
         Validation validation4 = new Validation();
         validation4.ValidatePassword();
-*/
+
         Validation validation5 = new Validation();
         validation5.ValidatePassword2();
+*/
+        Validation validation6 = new Validation();
+        validation6.ValidatePassword3();
+
     }
 }
